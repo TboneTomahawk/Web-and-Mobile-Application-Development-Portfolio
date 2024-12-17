@@ -117,12 +117,12 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
-  animation-fill-mode: both; // Stop from showing at start
+  animation-fill-mode: both; /* Stop from showing at start */
 }
 
 .section-inner a {
   animation: fadeInUp 0.5s ease-in-out 0.4s;
-  animation-fill-mode: both; // Stop from showing at start
+  animation-fill-mode: both; /* Stop from showing at start */
 }
 
 /* Background images */
@@ -476,6 +476,7 @@ footer ul li a:hover {
 
 .flight-item {
   display: flex;
+  color: #ffffff;
   gap: 20px;
   margin-bottom: 20px;
   border: 1px solid #ffffff;
@@ -495,10 +496,20 @@ footer ul li a:hover {
   flex-grow: 1;
 }
 
+.flight-item p {
+  color: #ffffff; /* Example color: orange-red */
+  font-size: 1.3em;
+  font-weight: bolder;
+  
+  text-shadow: 1px 1px 2px rgb(0, 0, 0); /* Add a slight shadow to smooth edges */
+}
+
 .flight-item h3 {
   margin-top: 0;
-  font-size: 1.2em;
-  color: black;
+  font-size: 1.8em;
+  color: rgb(255, 255, 255);
+  
+  text-shadow: 1px 1px 2px rgb(0, 0, 0); /* Add a slight shadow to smooth edges */
 }
 
 /* Upcoming Flights Section */
@@ -520,7 +531,7 @@ footer ul li a:hover {
   background-color: rgba(255, 255, 255, 0.145); /* Slight transparency */
   backdrop-filter: blur(10px); /* Apply blur effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  color: #fff; /* Change text color to white */
+  color: #ffffff; /* Change text color to white */
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -531,7 +542,7 @@ footer ul li a:hover {
 .upcoming-flights-section .flight-card h3,
 .upcoming-flights-section .flight-card p,
 .upcoming-flights-section .flight-card span {
-  color: #fff; /* Ensure all nested text elements are white */
+  color: #ffffff; /* Ensure all nested text elements are white */
 }
 
 .upcoming-flights-section .flight-card:hover {
